@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <title>My Work Space</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body style="background-image: linear-gradient(90deg, #72f28e, #59b3b9)">
+    <div class="topbar">
+        <a href="#">Logout</a>
+        <a href="#">Home</a>
+        <a href="./profile.html">profile</a>
+        <a href="./work.html">Work</a>
+    </div>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"><i class="fas fa-doctor"></i>My<span class="text-primary">Work</span>Space</h1><br>
+        <!--Form-->
+        <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+            <div class="form-group">
+                <label>Client Name</label>
+                <input type="text" name="PatientName" id="PatientName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Problem</label>
+                <input type="text" name="Problem" id="Problem" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Amount (Rs)</label>
+                <input type="text" name="id" id="id" class="form-control">
+            </div>
+            <div>
+                <input type="submit" value="Add Client" class="btn btn-primary btn-block">
+            </div>
+        </form>
+        <!--List-->
+        <table class="table table-striped mt-4" id="Patient-list">
+            <thead>
+                <tr>
+                    <th>Client Name</th>
+                    <th>Problem</th>
+                    <th>Amount (Rs)</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table><br><br>
+
+         <h1>History Of Cases:</h1>   
+        <table class="table table-striped mt-4">
+            <thead>
+               <th>Current Clients</th> 
+               <th>Problem</th>
+               <th>Date</th>
+               <th>Response</th>
+               <tr>
+                <td>jay</td>
+                <td>Allergy</td>
+                <td>1/5/2022</td>
+                <td style="color: green;">accepted</td>
+               </tr>
+               <tr>
+                <td>Akash</td>
+                <td>paralysis</td>
+                <td>4/5/2022</td>
+                <td style="color: green;">accepted</td>
+               </tr>
+               <tr>
+                <td>Prateek</td>
+                <td>fever</td>
+                <td>20/12/2021</td>
+                <td style="color: red;">rejected</td>
+               </tr>
+        </table>
+    </div>
+    <script src="../js/work.js"></script>
+</body>
+</html>

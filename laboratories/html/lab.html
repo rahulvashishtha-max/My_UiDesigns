@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/lab.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="banner" style="background-image:url(https://wallpaperaccess.com/full/1483956.jpg);">
+      <div class="container">
+        <div class="banner-content">
+          <img src="data:image/jpeg;base64,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" alt="">
+          <h1>Our Lab Experts at you service</h1>
+        </div>
+        <div class="service">
+          <a href="javascript:void(0);">
+            <div class="service-content">
+              Our Services
+            </div>
+            <div class="service-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="service-icon">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+          </a>
+          <a href="javascript:void(0);">
+            <div class="service-content">
+              Book Your Testing Schedule
+            </div>
+            <div class="service-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="service-icon">
+              <i class="fas fa-calendar"></i>
+            </div>
+          </a>
+          <a href="javascript:void(0);">
+            <div class="service-content">
+              Emergency test?
+            </div>
+            <div class="service-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="service-icon">
+              <div class="call">
+                <i class="fas fa-phone-volume"></i>                
+              </div>
+              <div class="call-number">
+                <p>Emergency Line</p>
+                <h3>1-800-900</h3>
+              </div>
+              
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+<!------------------------- work section starts from here --------------------------------------------------------------------->
+
+    <section class="work">
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="hours">
+              <h2>Working hours</h2>
+              <div class="time">
+                <div class="booking">Mon -Wed</div>
+                <div class="booking">8am - 7pm</div>
+                <div class="booking">
+                  <button type="button " class="btn-white">
+                    <i class="fas fa-calendar-week"></i> Book
+                  </button>
+                </div>
+              </div>
+              <div class="time">
+                <div class="booking">Thrusday</div>
+                <div class="booking">8am - 7pm</div>
+                <div class="booking">
+                  <button type="button " class="btn-white">
+                    <i class="fas fa-calendar-week"></i> Book
+                  </button>
+                </div>
+              </div>
+              <div class="time">
+                <div class="booking">Friday</div>
+                <div class="booking">8am - 7pm</div>
+                <div class="booking">
+                  <button type="button " class="btn-white">
+                    <i class="fas fa-calendar-week"></i> Book
+                  </button>
+                </div>
+              </div>
+              <div class="time">
+                <div class="booking">Sat - Sunday</div>
+                <div class="booking">8am - 7pm</div>
+                <div class="booking">
+                  <button type="button " class="btn-white">
+                    <i class="fas fa-calendar-week"></i> Book
+                  </button>
+                </div>
+              </div>
+              <div class="time">
+                <h4>Time not Flexible?</h4>
+                <p>
+                  We provide high quality integrated healthcare services, based on
+                  patient - center
+                </p>
+                <button type="button" class="btn-green btn-transparent mt-20px">
+                  <i class="fas fa-calendar-week"></i> Suggest Testing Time
+                </button>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-4">
+            <div class="response">
+              <a href="javascript:void(0);">
+                <div
+                  class="response-bg"
+                  style="
+                    background-image: url(https://images.pexels.com/photos/7579818/pexels-photo-7579818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+                </div>
+                <div class="response-content">
+                  <div class="response-icon">
+                    <i class="fab fa-canadian-maple-leaf"></i>
+                  </div>
+                  <h2>Our Covid-19 Test Laboratory</h2>
+                  <p>
+                    COVID-19 tests can detect either SARS-CoV-2 or biomarkers of
+                    SARS-CoV-2, the virus that causes COVID-19, or antibodies
+                    that your body makes after getting COVID-19 or after getting
+                    vaccinated.
+                  </p>
+                  <button type="button" class="read-more mt-20px">
+                    Read M0re
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="response">
+              <a href="javascript:void(0);">
+                <div
+                  class="response-bg"
+                  style="
+                    background-image: url(https://images.pexels.com/photos/8413291/pexels-photo-8413291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+                  "
+                ></div>
+                <div class="response-content">
+                  <div class="response-icon">
+                    <i class="fas fa-leaf"></i>
+                  </div>
+                  <h2>Our Covid-19 Test Laboratory</h2>
+                  <p>
+                    COVID-19 tests can detect either SARS-CoV-2 or biomarkers of
+                    SARS-CoV-2, the virus that causes COVID-19, or antibodies
+                    that your body makes after getting COVID-19 or after getting
+                    vaccinated.
+                  </p>
+                  <button type="button" class="read-more mt-20px">
+                    Read M0re
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
